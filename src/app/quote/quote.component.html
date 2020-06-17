@@ -1,5 +1,6 @@
 <div container-fluid>
     <h1>QUOTES</h1>
+    <hr>
     <div class="row">
       <div class="col">
           <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
@@ -8,7 +9,7 @@
         <h3>Quotes from Intelligent Life Force</h3>
         <ul>
           <li *ngFor='let quote of quotes; let i = index'>
-            {{quote.quote}}
+            {{quote.quote}}<br>
             <app-quote-detail [quote]='quote' (quoteDelete)='deleteQuote($event, i)' (upvote)='upVote($event,i)' (downvote)='downVote($event,i)'></app-quote-detail>
           </li>
         </ul>
