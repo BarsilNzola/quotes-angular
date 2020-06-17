@@ -2,5 +2,7 @@
     <div class="card-body">
       <p>Author: {{quote.author}}</p>
       <p>Publisher: {{quote.publisher}}</p>
+      <p>Date Submitted: {{quote.submitDate|date}}</p>
+      <p>Time Passed Since Submitted: <span>{{quote.submitDate | timeAgo}}</span></p>
     </div>
 </div>
