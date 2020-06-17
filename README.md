@@ -1,5 +1,5 @@
 ## Project Name
-Delani Studio
+Quotes
 
 ## Author Name
 Barsil Odiwuor Ochola
@@ -9,13 +9,13 @@ Email: barsiljohn@gmail.com
 Phone No: +254707159461
 
 ## Project Description
-This a landing page for Delani-Studio.
+An app to add quotes, show quote details, upvote and downvote them.
 
 ## Project Setup Instructions
 To run the webpage:
 -clone the repository to your local machine "git clone URL"
 -cd in directory "cd Independent"
--open index.html on your browser.
+-ng serve on CLI
 
 ### Prerequisites
 -Prior knowledge in Git and Github
@@ -23,14 +23,14 @@ To run the webpage:
 
 ### Software/Tech Used
 -VS Code, Sublime Text, Atom or any other text editor
--HTML/CSS/js
+-HTML/CSS/Typescript
 -Terminal/CLI
 -Git
 -Node
 -Angular
 
 ## Link to Github Pages
-https://barsilnzola.github.io/Delani-studio/
+https://barsilnzola.github.io/quotes-angular/
 
 ## Copyright and Licence
 MIT License
