@@ -1,9 +1,28 @@
 <div class="card">
     <div class="card-body">
-      <p>Author: {{quote.author}}</p>
-      <p>Publisher: {{quote.publisher}}</p>
-      <p>Date Submitted: {{quote.submitDate|date}}</p>
-      <p>Time Passed Since Submitted: <span>{{quote.submitDate | timeAgo}}</span></p>
-      <button (click) ='deleteQuote(true)'>Delete</button>
+      <div class="row">
+        <div class="col">
+          <p>Author: {{quote.author}}</p>
+          <p>Publisher: {{quote.publisher}}</p>
+          <p>Date Submitted: {{quote.submitDate|date}}</p>
+        </div>
+        <div class="col">
+          <p>Inspirational: {{quote.upvote}}</p>
+          <p>Terrible: {{quote.downVote}}</p>
+        </div>
+      </div>
+          <p>Time Passed Since Submitted: <span>{{quote.submitDate | timeAgo}}</span></p>
+      <div class="row">
+        <div class="col">
+          <button (click)='upVote(true)'>Up Vote</button>
+        </div>
+        <div class="col">
+          <button (click)='downVote(true)'>Down Vote</button>
+        </div>
+        <div class="col">
+          <button (click) ='deleteQuote(true)'>Delete</button>
+        </div>
+      </div>
+      
     </div>
 </div>

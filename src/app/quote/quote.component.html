@@ -9,7 +9,7 @@
         <ul>
           <li *ngFor='let quote of quotes; let i = index'>
             {{quote.quote}}
-            <app-quote-detail [quote]='quote' (quoteDelete)='deleteQuote($event, i)'></app-quote-detail>
+            <app-quote-detail [quote]='quote' (quoteDelete)='deleteQuote($event, i)' (upvote)='upVote($event,i)' (downvote)='downVote($event,i)'></app-quote-detail>
           </li>
         </ul>
       </div>

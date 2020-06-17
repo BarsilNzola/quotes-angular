@@ -9,8 +9,8 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1, 'Named must be your fear before banish it you can','John Nzola','Master Yoda',new Date(2020,6,17)),
-    new Quote(2, 'We shall destroy the ones called the turtles who call themselves the turtles.','John Nzola','Krang',new Date(2020,6,17))
+    new Quote(1, 'Named must be your fear before banish it you can','John Nzola','Master Yoda',0,0,new Date(2020,6,17)),
+    new Quote(2, 'We shall destroy the ones called the turtles who call themselves the turtles.','John Nzola','Krang',0,0,new Date(2020,6,17))
   ];
 
   deleteQuote(quoteDelete, index){
@@ -28,6 +28,18 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength+1;
     quote.submitDate = new Date(quote.submitDate)
     this.quotes.push(quote)
+  }
+
+  upVote(upvote,index){
+    if(upvote){
+      this.quotes[index].upvote +=1;
+    }
+  }
+
+  downVote(downvote,index){
+    if(downvote){
+      this.quotes[index].downVote +=1;
+    }
   }
 
   constructor() { }
