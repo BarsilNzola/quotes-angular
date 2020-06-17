@@ -13,6 +13,16 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'We shall destroy the ones called the turtles who call themselves the turtles.','John Nzola','Krang',new Date(2020,6,17))
   ];
 
+  deleteQuote(quoteDelete, index){
+    if(quoteDelete){
+      let toDelete = confirm('Are you sure you want to delete this quote?')
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
