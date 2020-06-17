@@ -7,7 +7,7 @@
       <div class="col">
         <h3>Quotes from Intelligent Life Force</h3>
         <ul>
-          <li *ngFor='let quote of quotes'>
+          <li *ngFor='let quote of quotes; let i = index'>
             {{quote.quote}}
             <app-quote-detail [quote]='quote' (quoteDelete)='deleteQuote($event, i)'></app-quote-detail>
           </li>
