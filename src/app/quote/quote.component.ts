@@ -9,8 +9,8 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, quote:'Named must be your fear before banish it you can', author:'John Nzola', publisher:'Master Yoda'},
-    {id:2, quote:'We shall destroy the ones called the turtles who call themselves the turtles.', author: 'John Nzola', publisher: 'Krang'}
+    new Quote(1, 'Named must be your fear before banish it you can','John Nzola','Master Yoda',new Date(2020,6,17)),
+    new Quote(2, 'We shall destroy the ones called the turtles who call themselves the turtles.','John Nzola','Krang',new Date(2020,6,17))
   ];
 
   constructor() { }
